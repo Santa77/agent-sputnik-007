@@ -1,0 +1,5 @@
+{
+    "require": {
+        "nutama/mattermost-webhook": "^1.0"
+    }
+}
