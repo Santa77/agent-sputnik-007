@@ -1,1 +1,3 @@
 # agent-sputnik-007
+
+uvodny commit. odporucam spustat z cronu tak raz za 5 minut....
