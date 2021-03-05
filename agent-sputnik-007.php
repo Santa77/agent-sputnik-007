@@ -28,7 +28,10 @@ $f1=file_get_contents($url);
 $f2=file_get_contents('./get_all_drivein_times_vacc.old');
 if ($f1!=$f2){
     echo "BACHA ZMENA\n";
+    // zaloha pre buduce porovnanie
     file_put_contents('./get_all_drivein_times_vacc.old',$f1);
+    // zaloha pre archivaciu a casovu rekonstrukciu
+    file_put_contents('./get_all_drivein_times_vacc.'.date("Ymd-His").'.bak',$f1);
 }else{
     echo "NIVL STÁBL. bez-peremen\n";
     die();
